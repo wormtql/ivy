@@ -11,17 +11,19 @@
         name: "Align",
         props: {
             a: { type: String, default: "center" },
-            height: { type: Number, default: -1 },
-            width: { type: Number, default: -1 }
+            // height: { type: Number, default: -1 },
+            // width: { type: Number, default: -1 }
         },
         computed: {
             wrapperStyle: function () {
                 return {
-                    maxHeight: "100%",
-                    height: this.height < 0 ? undefined : `${this.height}px`,
-                    maxWidth: "100%",
-                    width: this.width < 0 ? undefined : `${this.width}px`,
+                    // maxHeight: "100%",
+                    // height: this.height < 0 ? undefined : `${this.height}px`,
+                    // maxWidth: "100%",
+                    // width: this.width < 0 ? undefined : `${this.width}px`,
                     // backgroundColor: "#00000011"
+                    display: "inline-block",
+                    height: "auto",
                 }
             },
             rootStyle: function () {

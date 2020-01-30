@@ -17,10 +17,6 @@
                 type: Number,
                 default: 64
             },
-            fluid: {
-                type: Boolean,
-                default: true
-            }
         },
         computed: {
             leftStyle: function () {
@@ -42,17 +38,9 @@
                 }
             },
             rootStyle: function () {
-                let width = undefined;
-                let height = undefined;
-                if (this.fluid || this.width === -1) {
-                    width = "100%";
-                }
-                if (this.fluid || this.height === -1) {
-                    height = "100%";
-                }
                 return {
-                    width,
-                    height,
+                    width: "100%",
+                    height: "100%",
                 }
             }
         }

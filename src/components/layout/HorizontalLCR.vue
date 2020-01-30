@@ -16,10 +16,6 @@
     export default {
         name: "HorizontalLCR",
         props: {
-            fluid: {
-                type: Boolean,
-                default: true
-            },
             color: {
                 type: String,
                 default: "transparent"
@@ -60,17 +56,9 @@
                 };
             },
             rootStyle: function () {
-                let width = undefined;
-                let height = undefined;
-                if (this.fluid || this.width === -1) {
-                    width = "100%";
-                }
-                if (this.fluid || this.height === -1) {
-                    height = "100%";
-                }
                 return {
-                    width,
-                    height,
+                    width: "100%",
+                    height: "100%",
                     position: "relative",
                     backgroundColor: this.color
                 }

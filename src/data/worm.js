@@ -1,4 +1,5 @@
-let layouts = ["Columns", "HorizontalLCR", "LeftFixed", "LeftRightFixed", "RightFixed", "Rows", "TopFixed", "VerticalTCB", "VFlow"];
+let layouts = ["Columns", "HorizontalLCR", "LeftFixed", "LeftRightFixed", "RightFixed", "Rows", "TopFixed",
+    "BottomFixed", "VerticalTCB", "VFlow", "Align"];
 let temp = Array.apply(null, {length: layouts.length}).map((item, index) => {
     return {
         id: layouts[index],

@@ -29,11 +29,11 @@
                 :css="false"
         >
             <div v-show="active" :style="contentStyle">
-                <spacer v-if="gap > 0">{{ "v" + gap }}</spacer>
+                <spacer v-if="gap > 0 && !noGap">{{ "v" + gap }}</spacer>
                     <slot name="content">
                         啥也没有
                     </slot>
-                <spacer v-if="gap > 0">{{ "v" + gap }}</spacer>
+                <spacer v-if="gap > 0 && !noGap">{{ "v" + gap }}</spacer>
             </div>
         </transition>
 
@@ -62,6 +62,7 @@
             color: { type: String, default: "deeppink" },
             indent: { type: Number, default: 16 },
             gap: { type: Number, default: 16 },
+            noGap: { type: Boolean, default: false },
             noIndent: { type: Boolean, default: false },
             prependIcon: { type: String },
             outlined: { type: Boolean, default: false }

@@ -1,23 +1,24 @@
 <template>
     <div :style="rootStyle">
-        <slot></slot>
+
     </div>
 </template>
 
 <script>
     export default {
-        name: "VFlow",
+        name: "Cube",
         props: {
-
+            size: { type: Number, default: 32 },
+            color: { type: String, default: "#123456" }
         },
         computed: {
             rootStyle: function () {
                 return {
-                    width: "100%",
-                    height: "100%",
+                    width: `${this.size}px`,
+                    height: `${this.size}px`,
                     display: "inline-block",
-                    verticalAlign: "top",
-                    boxSizing: "border-box"
+                    backgroundColor: this.color,
+                    verticalAlign: "top"
                 }
             }
         }

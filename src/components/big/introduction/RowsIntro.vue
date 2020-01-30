@@ -2,19 +2,19 @@
     <align a="top" :width="750">
         <div style="width: 750px">
             <spacer>v32</spacer>
-            <h1>Columns 列</h1>
+            <h1>Rows 行</h1>
             <spacer>v32</spacer>
 
-            <p>columns将一个区域分成n列，并且将自动填充父元素的所有空间</p>
+            <p>将一个区域分成n行，并且将自动填充父元素的所有空间</p>
             <spacer>v8</spacer>
             <expandable caption="代码" color="#123456"
-                no-indent :gap="0">
+                        no-indent :gap="0">
                 <template #content>
-                    <pre v-highlightjs="codes.columnsCodes[0]"><code class="html"></code></pre>
+                    <pre v-highlightjs="codes.rowsCodes[0]"><code class="html"></code></pre>
                 </template>
             </expandable>
-            <div style="height: 100px">
-                <columns divide="1 1 1">
+            <div style="height: 200px">
+                <rows divide="1 1 1">
                     <template #d1>
                         <div class="fluid" style="background-color: #123456aa"></div>
                     </template>
@@ -24,20 +24,20 @@
                     <template #d3>
                         <div class="fluid" style="background-color: #123456aa"></div>
                     </template>
-                </columns>
+                </rows>
             </div>
             <spacer>v32</spacer>
 
-            <p>修改divide属性来获得不同的比例</p>
+            <p>通过更改divide属性获得不同的比例</p>
             <spacer>v8</spacer>
             <expandable caption="代码" color="#123456"
                         no-indent :gap="0">
                 <template #content>
-                    <pre v-highlightjs="codes.columnsCodes[1]"><code class="html"></code></pre>
+                    <pre v-highlightjs="codes.rowsCodes[1]"><code class="html"></code></pre>
                 </template>
             </expandable>
-            <div style="height: 100px">
-                <columns divide="4 3 2 1">
+            <div style="height: 300px">
+                <rows divide="3 2 1 2">
                     <template #d1>
                         <div class="fluid" style="background-color: #123456aa"></div>
                     </template>
@@ -50,7 +50,7 @@
                     <template #d4>
                         <div class="fluid" style="background-color: #123456cc"></div>
                     </template>
-                </columns>
+                </rows>
             </div>
 
             <spacer>v32</spacer>
@@ -61,16 +61,16 @@
 <script>
     import Align from "@/components/layout/Align";
     import Spacer from "@/components/base/misc/Spacer";
-    import Columns from "@/components/layout/Columns";
-    import Expandable from "@/components/ui/Expandable";
     import codes from "@/data/codes";
+    import Expandable from "@/components/ui/Expandable";
+    import Rows from "@/components/layout/Rows";
 
     export default {
-        name: "ColumnsIntro",
-        components: {Expandable, Columns, Spacer, Align},
+        name: "RowsIntro",
+        components: {Rows, Expandable, Spacer, Align},
         data: function () {
             return {
-                codes,
+                codes
             }
         }
     }

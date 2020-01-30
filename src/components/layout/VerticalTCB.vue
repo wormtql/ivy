@@ -16,28 +16,16 @@
     export default {
         name: "VerticalTCB",
         props: {
-            fluid: {
-                type: Boolean,
-                default: true
-            },
             color: {
                 type: String,
                 default: "transparent"
-            },
-            height: {
-                type: Number,
-                default: 100
-            },
-            width: {
-                type: Number,
-                default: 100
             }
         },
         computed: {
             rootStyle: function () {
                 return {
-                    width: this.fluid ? "100%" : `${this.width}px`,
-                    height: this.fluid ? "100%" : `${this.height}px`,
+                    width: "100%",
+                    height: "100%",
                     display: "inline-block",
                     position: "relative",
                     backgroundColor: this.color,
