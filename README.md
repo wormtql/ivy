@@ -1,5 +1,10 @@
-# diy
-
+# ivy
+#### Vue 布局以及基础组件库
+#### a vue layout and basic component lib
+## Preview
+![Image](./images/a.png)
+![Image](./images/b.png)
+![Image](./images/c.png)
 ## Project setup
 ```
 npm install

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ma-4 {
+    margin: 4px;
+}
+
+.ma-8 {
+    margin: 8px;
+}
+
+.ma-16 {
+    margin: 16px;
+}
+
+.mx-8 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.mx-16 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.mx-24 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.px-8 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.pa-16 {
+    padding: 16px;
+}
+
+.pa-8 {
+    padding: 8px;
+}
+
+.pa-24 {
+    padding: 24px;
+}
+
+.pb-8 {
+    padding-bottom: 8px;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.py-4 {
+    padding: 4px 0;
+}
+
+.py-8 {
+    padding: 8px 0;
+}
+
+.py-16 {
+    padding: 16px 0;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.c-white {
+    color: white;
+}
+
+.fluid {
+    height: 100%;
+    width: 100%;
+}
