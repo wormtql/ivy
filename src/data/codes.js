@@ -226,6 +226,28 @@ let alignCodes = [
     </rows>
 </div>`
 ];
+let pColorCodes = [
+    `<div style="height: 96px">
+    <columns divide="1 2 3">
+        <template #d1>
+            <p-color :color="color[idx]"></p-color>
+        </template>
+        <template #d2>
+            <p-color>#12345644</p-color>
+        </template>
+        <template #d3>
+            <p-color>#12345622</p-color>
+        </template>
+    </columns>
+</div>`
+];
+let fixedLayerCodes = [
+    `<a-button text @click="show = !show">显示/关闭</a-button>
+<fixed-layer a="bottom right" v-show="show">
+    <p-padding>16px</p-padding>
+    <i-button icon="fa:arrow-up" :size="80" :scale="1.5" color="deeppink"></i-button>
+</fixed-layer>`
+];
 
 export default {
     columnsCodes,
@@ -235,5 +257,7 @@ export default {
     leftRightFixedCodes,
     topFixedCodes,
     verticalTCBCodes,
-    alignCodes
+    alignCodes,
+    pColorCodes,
+    fixedLayerCodes,
 }

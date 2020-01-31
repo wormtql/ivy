@@ -1,5 +1,5 @@
 let layouts = ["Columns", "HorizontalLCR", "LeftFixed", "LeftRightFixed", "RightFixed", "Rows", "TopFixed",
-    "BottomFixed", "VerticalTCB", "VFlow", "Align"];
+    "BottomFixed", "VerticalTCB", "VFlow", "Align", "FixedLayer"];
 let temp = Array.apply(null, {length: layouts.length}).map((item, index) => {
     return {
         id: layouts[index],
@@ -18,6 +18,13 @@ let data = [
         text: "基础组件",
         icon: "fa:square",
         children: [
+            {
+                text: "表单",
+                icon: "fa:align-left",
+                children: [
+                    { id: "AInput", icon: "fa:align-left", text: "AInput" }
+                ]
+            },
             {
                 text: "按钮",
                 icon: "fa:square",
@@ -47,6 +54,27 @@ let data = [
                         id: "AImage",
                         icon: "fa:image",
                         text: "AImage"
+                    }
+                ]
+            },
+            {
+                text: "功能",
+                icon: "fa:font",
+                children: [
+                    {
+                        id: "PColor",
+                        icon: "fa:font",
+                        text: "PColor"
+                    },
+                    {
+                        id: "PSize",
+                        icon: "fa:font",
+                        text: "PSize"
+                    },
+                    {
+                        id: "PPadding",
+                        icon: "fa:font",
+                        text: "PPadding"
                     }
                 ]
             }

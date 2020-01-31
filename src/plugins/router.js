@@ -19,6 +19,9 @@ import BottomFixedIntro from "@/components/big/introduction/BottomFixedIntro";
 import VerticalTCBIntro from "@/components/big/introduction/VerticalTCBIntro";
 import VFlowIntro from "@/components/big/introduction/VFlowIntro";
 import AlignIntro from "@/components/big/introduction/AlignIntro";
+import PColorIntro from "@/components/big/introduction/PColorIntro";
+import FixedLayerIntro from "@/components/big/introduction/FixedLayerIntro";
+import AInputIntro from "@/components/big/introduction/AInputIntro";
 
 Vue.use(VueRouter);
 
@@ -31,6 +34,9 @@ const routes = [
             { path: "i-button", component: IButtonIntro },
             { path: "a-icon", component: AIconIntro },
             { path: "a-image", component: AImageIntro },
+            { path: "a-input", component: AInputIntro },
+
+            { path: "p-color", component: PColorIntro },
 
             // layouts
             { path: "columns", component: ColumnsIntro },
@@ -43,7 +49,8 @@ const routes = [
             { path: "bottom-fixed", component: BottomFixedIntro },
             { path: "vertical-t-c-b", component: VerticalTCBIntro },
             { path: "v-flow", component: VFlowIntro },
-            { path: "align", component: AlignIntro }
+            { path: "align", component: AlignIntro },
+            { path: "fixed-layer", component: FixedLayerIntro },
         ]
     }
 ];
