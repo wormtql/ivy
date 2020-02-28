@@ -1,6 +1,7 @@
 # ivy
 #### Vue 布局以及基础组件库
 #### a vue layout and basic component lib
+#### [web](https://quizzical-villani-ce22c9.netlify.com/#/gallery/)
 ## Preview
 ![Image](./images/a.png)
 ![Image](./images/b.png)
